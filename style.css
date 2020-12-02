@@ -1,53 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 body {
-    font-family: "Raleway", "Sans serif";
-    margin: 0;
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
 }
 
 /* Mise en forme HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    height: 66px;
-    align-items: center;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  align-items: center;
+}
 
-  .logo {
-    margin: 10px;
-    width: 100px;
-    height: auto;
-  }
+.logo {
+  margin: 10px;
+  width: 100px;
+  height: auto;
+}
 
-  .nav-link {
-    margin: 10px;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 15px;
-  }
+.nav-link {
+  margin: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
 
-  .n-link {
-    text-decoration: none;
-    color: #999999;
-    padding: 0 30px;
-  }
+.n-link {
+  text-decoration: none;
+  color: #999999;
+  padding: 0 30px;
+}
 
-  .n-link:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 23px;
-  }
+.n-link:hover {
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 23px;
+}
 
-  .n-link:focus {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 23px;
-  }
+.n-link:focus {
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding-top: 23px;
+}
 
-  .n-signup {
-    text-decoration: none;
-    color: #0065FC;
-    padding: 0 20px;
-  }
+.n-signup {
+  text-decoration: none;
+  color: #0065FC;
+  padding: 0 20px;
+}
   
 /* Mise en forme SECTION SEARCH */
 .search {
