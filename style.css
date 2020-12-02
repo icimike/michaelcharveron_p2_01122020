@@ -172,3 +172,36 @@ body {
   width: auto;
   font-size: small;
 }
+
+
+.i-1 {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+
+.legend {
+  position: absolute;
+  z-index: auto;
+  padding-top: 20px;
+  border: 1px solid black;
+} 
+
+.img-1 {
+  
+  border: 1px solid black;
+  font-size: small;
+  line-height: 20px;
+}
+
+.legend-1 {
+  font-weight: bold;
+}
+
+.notation {
+  color: #0065FC;
+}
+
+.n-2 {
+  color: #d9d9d9;
+}
