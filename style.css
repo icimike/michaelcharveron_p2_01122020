@@ -5,7 +5,7 @@ body {
 }
 
 /* Mise en forme HEADER */
-.header {
+header {
     display: flex;
     justify-content: space-between;
     height: 66px;
@@ -173,7 +173,7 @@ body {
   font-size: small;
 }
 
-/* Mise en forme DISPLAY1 & ASIDE */
+/* Mise en forme DISPLAY & ASIDE*/
 .displayaside {
   display: flex;
   border: 1px solid black;
@@ -192,6 +192,35 @@ body {
   width: 40%;
   height: 400px;
 }
+
+.imagePosition {
+  position: relative;
+}
+
+.i-1 {
+  width: 200px;
+  height: auto;
+}
+
+.legend {
+  position: absolute;
+  font-size: small;
+  line-height: 20px;
+}
+
+.legend-1 {
+  font-weight: bold;
+}
+
+.notation {
+  color: #0065FC;
+}
+
+.n-2 {
+  color: #d9d9d9;
+}
+
+
 
 /* Mise en forme BESIDE */
 .beside {
