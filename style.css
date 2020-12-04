@@ -174,13 +174,8 @@ header {
 }
 
 /* Mise en forme DISPLAY & ASIDE*/
-
 figure {
   display: inline;
-  margin: 0;
-}
-
-figcaption {
   margin: 0;
 }
 
@@ -195,19 +190,21 @@ figcaption {
   padding: 10px;
 }
 
-.titre {
+.d-title {
   width: 750px;
   height: 50px;
+  margin: 0;
+  padding: 20px 0 0 20px;
 }
 
-.a-title {
+.asideTitle {
   display: flex;
   margin-left: 10px;
   width: 360px;
   height: 50px;
 }
 
-.titre2 {
+.a-title {
   width: 250px;
   height: 50px;
 }
@@ -223,35 +220,35 @@ figcaption {
   height: 40px;
 }
 
-.mask-image {
+.d-layerThumbnail {
   width: 200px;
   height: 100px;
   text-align: center;
   overflow: hidden;
 }
 
-.mask-image2 {
+.a-layerThumbnail {
   width: 150px;
   height: 160px;
   text-align: center;
   overflow: hidden;
 }
 
-.photo {
+.d-photo {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   width: 200px;
   height: 100px;
 }
 
-.photo2 {
+.a-photo {
   object-fit: cover;
   border-radius: 20px 0 0 20px;
   width: 120px;
   height: 130px;
 }
 
-.background-image {
+.d-backgroundThumbnail {
   background-color: white;
   box-shadow:2px 2px 10px #dddbdb;
   width: 200px;
@@ -263,7 +260,7 @@ figcaption {
   cursor: pointer;  
 }
 
-.background-image2 {
+.a-backgroundThumbnail {
   display: flex;
   background-color: white;
   box-shadow:2px 2px 10px #dddbdb;
@@ -278,14 +275,14 @@ figcaption {
   cursor: pointer;  
 }
 
-.legend {
+.d-legend {
   padding-left: 10px;
   width: 170px;
   font-size: 12px;
   line-height: 5px;
 }
 
-.legend2 {
+.a-legend {
   padding-left: 20px;
   padding-right: 20px;
   width: 170px;
@@ -308,11 +305,11 @@ figcaption {
   padding: 10px;
 }
 
-.notation {
+.d-rating {
   color: #0065FC;
 }
 
-.notation2 {
+.a-rating {
   line-height: 55px;
   color: #0065FC;
 }
