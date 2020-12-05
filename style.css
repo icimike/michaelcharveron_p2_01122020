@@ -350,6 +350,7 @@ h3 {
   height: 180px;
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
+  cursor: pointer;
 }
 
 .b-photo-2 {
@@ -364,6 +365,7 @@ h3 {
   height: 135px;
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
+  cursor: pointer;
 }
 
 .b-photo-3 {
@@ -379,6 +381,7 @@ h3 {
   height: 160px;
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
+  cursor: pointer;
 }
 
 .b-photo-5 {
@@ -393,6 +396,7 @@ h3 {
   height: 155px;
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
+  cursor: pointer;
 }
 
 .b-photo-6 {
@@ -408,6 +412,7 @@ h3 {
   height: 350px;
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
+  cursor: pointer;
 }
 
 .b-photo-1, .b-photo-4 {
