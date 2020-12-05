@@ -280,8 +280,7 @@ figure {
 .displayAside {
   display: flex;
   padding: 0 0 30px 30px;
-  height: 600px;
-  
+  height: 500px;
 }
 
 .aside {
@@ -313,6 +312,40 @@ h3 {
 .star-1, .star-2 {
   color: #F2F2F2;
 }
+
+/* Mise en forme BESIDE */
+.beside {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 480px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.b-title {
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 0;
+  width: 1300px;
+  height: 15px;
+}
+
+.b-bloc {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 1300px;
+  height: 350px;
+  margin-bottom: 90px;
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4 {
+  border: 1px solid black;
+  width: 265px;
+  height: 350px;
+}
+
 
 /* Mise en forme FOOTER */
 footer {
