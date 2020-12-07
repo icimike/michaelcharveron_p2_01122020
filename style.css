@@ -118,7 +118,7 @@ header {
   }
 }
 
-@media all and (max-width:  767px) {
+@media all and (max-width: 767px) {
   .s-find {
     display: none;
   }
@@ -204,13 +204,21 @@ header {
   font-size: small;
 }
 
-/* Mise en forme DISPLAY & ASIDE*/
-figure {
+/* Mise en forme DISPLAY */
+figure, h3, h4, h5 {
   display: inline;
   margin: 0;
 }
 
+.displayAside {
+  border: 1px solid black;
+  display: flex;
+  padding: 0 0 30px 30px;
+  height: 500px;
+}
+
 .display {
+  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   width: 740px;
@@ -222,44 +230,30 @@ figure {
 }
 
 .d-title {
+  border: 1px solid black;
   width: 740px;
-  padding-left: 25px;
+  
 }
 
-.asideTitle {
+.d-thumbnail {
   display: flex;
-  width: 360px;
-  height: 50px;
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 740px;
+  border: 1px solid black;
 }
 
-.a-title {
-  margin: 0;
-  padding: 23px 0 0 25px;
-  
-}
-
-.a-icon {
-  padding: 23px 0 0 135px;
-  
-}
-
-.more {
-  padding-left: 25px;
-}
-
-.d-layerThumbnail {
+.d-backgroundThumbnail {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow:2px 2px 10px #dddbdb;
   width: 200px;
-  height: 90px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.a-layerThumbnail {
-  width: 150px;
-  height: 160px;
-  text-align: center;
-  overflow: hidden;
+  height: 150px;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;  
 }
 
 .d-photo {
@@ -269,22 +263,52 @@ figure {
   height: 90px;
 }
 
-.a-photo {
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
-  width: 120px;
-  height: 115px;
+.d-legend {
+  border: 1px solid black;
+  margin-left: 10px;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 5px;
 }
 
-.d-backgroundThumbnail {
-  background-color: white;
-  box-shadow:2px 2px 10px #dddbdb;
-  width: 200px;
-  height: 155px;
-  border-radius: 25px;
-  padding: 5px;
-  margin: 0 15px 25px 20px;
-  cursor: pointer;  
+.d-rating {
+  border: 1px solid black;
+  color: #0065FC;
+}
+
+.d-button-title {
+  border: 1px solid black;
+  width: 740px;
+  padding-left: 25px;
+}
+
+/* Mise en forme ASIDE */
+aside {
+  border: 1px solid black;
+  width: 365px;
+  height: 500px;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  margin: 10px 30px 30px 25px;
+  padding: 10px;
+}
+
+.asideTitle {
+  border: 1px solid black;
+  display: flex;
+  width: 360px;
+  height: 50px;
+}
+
+.a-title {
+  border: 1px solid black;
+  margin: 0;
+  padding: 23px 0 0 25px;
+}
+
+.a-icon {
+  border: 1px solid black;
+  padding: 23px 0 0 135px;
 }
 
 .a-backgroundThumbnail {
@@ -299,48 +323,28 @@ figure {
   cursor: pointer;  
 }
 
-.d-legend {
-  padding-left: 10px;
-  width: 170px;
-  font-size: 12px;
-  line-height: 5px;
+.a-photo {
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  width: 120px;
+  height: 115px;
 }
 
 .a-legend {
+  border: 1px solid black;
   padding-left: 20px;
   padding-right: 20px;
   width: 170px;
   font-size: 12px;
 }
 
-.displayAside {
-  display: flex;
-  padding: 0 0 30px 30px;
-  height: 500px;
-}
-
-aside {
-  width: 365px;
-  height: 500px;
-  background-color: #F2F2F2;
-  border-radius: 15px;
-  margin: 10px 30px 30px 25px;
-  padding: 10px;
-}
-
-.d-rating {
-  color: #0065FC;
-}
-
 .a-price {
+  border: 1px solid black;
   margin-top: 5px;
 }
 
-h3 {
-  margin-bottom: 0;
-}
-
 .a-rating {
+  border: 1px solid black;
   padding-top: 15px;
   color: #0065FC;
 }
