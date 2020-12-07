@@ -211,28 +211,36 @@ figure, h3, h4, h5 {
 }
 
 .displayAside {
-  border: 1px solid black;
+  border: 1px solid rgb(24, 197, 102);
   display: flex;
-  padding: 0 0 30px 30px;
-  height: 500px;
+  justify-content: space-between;
+  height: 550px;
+  margin: 5px 35px 0 35px;
 }
 
 .display {
-  border: 1px solid black;
+  border: 1px solid rgb(230, 20, 20);
   display: flex;
   flex-wrap: wrap;
   width: 740px;
-  height: 500px;
+  height: 520px;
   background-color: #F2F2F2;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  
 }
 
 .d-title {
+  display: flex;
   border: 1px solid black;
   width: 740px;
-  
+  margin: 10px 10px 0 10px;
+  height: 61px;
+}
+
+.d-title-top {
+  border: 1px solid rgb(204, 207, 10);
+  margin: 25px 0 5px 0;
 }
 
 .d-thumbnail {
@@ -240,7 +248,9 @@ figure, h3, h4, h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 740px;
-  border: 1px solid black;
+  height: 370px;
+  border: 1px solid rgb(32, 21, 197);
+  margin: 10px;
 }
 
 .d-backgroundThumbnail {
@@ -279,47 +289,63 @@ figure, h3, h4, h5 {
 .d-button-title {
   border: 1px solid black;
   width: 740px;
-  padding-left: 25px;
+  height: 30px;
+  margin: 0 10px 5px 10px;
 }
 
 /* Mise en forme ASIDE */
 aside {
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgb(241, 16, 16);
   width: 365px;
   height: 500px;
   background-color: #F2F2F2;
   border-radius: 15px;
-  margin: 10px 30px 30px 25px;
+  margin: 5px;
   padding: 10px;
+  
 }
 
 .asideTitle {
   border: 1px solid black;
   display: flex;
-  width: 360px;
-  height: 50px;
+  justify-content: space-between;
+  width: 365px;
+  height: 61px;
 }
 
 .a-title {
   border: 1px solid black;
-  margin: 0;
-  padding: 23px 0 0 25px;
+  margin: 25px 20px 5px 30px;
 }
 
 .a-icon {
   border: 1px solid black;
-  padding: 23px 0 0 135px;
+  margin: 25px 30px 5px 10px;
+}
+
+.a-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 365px;
+  height: 430px;
 }
 
 .a-backgroundThumbnail {
   display: flex;
   background-color: white;
+  border: 1px solid black;
   box-shadow:2px 2px 10px #dddbdb;
   width: 300px;
   height: 115px;
   border-radius: 25px;
   padding: 5px;
-  margin: 15px 0 20px 20px;
   cursor: pointer;  
 }
 
