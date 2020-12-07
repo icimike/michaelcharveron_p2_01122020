@@ -6,7 +6,7 @@ body {
 
 /* Mise en forme HEADER */
 header {
-  border: 1px solid black;
+   
   display: flex;
   justify-content: space-between;
   height: 66px;
@@ -14,14 +14,14 @@ header {
 }
 
 .logo {
-  border: 1px solid black;
+   
   margin-left: 40px;
   width: 100px;
   height: auto;
 }
 
 .nav-link {
-  border: 1px solid black;
+   
   margin-right: 40px;
   padding: 15px;
   font-weight: bold;
@@ -29,7 +29,7 @@ header {
 }
 
 .n-link {
-  border: 1px solid black;
+   
   text-decoration: none;
   color: #999999;
   padding: 0 30px;
@@ -48,7 +48,7 @@ header {
 }
 
 .n-signup {
-  border: 1px solid black;
+   
   text-decoration: none;
   color: #0065FC;
   padding: 0 20px;
@@ -57,24 +57,24 @@ header {
 /* Mise en forme SECTION SEARCH */
 .search {
   margin: 0 40px 0 40px;
-  border: 1px solid black;
+   
   
 }
 
 .s-title {
-  border: 1px solid black;
+   
   font-size: medium;
   margin-bottom: 5px;
 }
 
 .s-subtitle {
-  border: 1px solid black;
+   
   font-size: smaller;
   margin-top: 0;
 }
 
 .s-input {
-  border: 1px solid black;
+   
   display: flex;
 }
 
@@ -137,7 +137,7 @@ header {
 }
 
 .filters {
-  border: 1px solid black;
+   
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -178,7 +178,7 @@ header {
 }
 
 .result {
-  border: 1px solid black;
+   
   display: flex;
   margin-top: 15px;
 }
@@ -211,7 +211,7 @@ figure, h3, h4, h5 {
 }
 
 .displayAside {
-  border: 1px solid rgb(24, 197, 102);
+  
   display: flex;
   justify-content: space-between;
   
@@ -219,7 +219,7 @@ figure, h3, h4, h5 {
 }
 
 .display {
-  border: 1px solid rgb(230, 20, 20);
+  
   display: flex;
   flex-direction: column;
  
@@ -234,14 +234,14 @@ figure, h3, h4, h5 {
 
 .d-title {
   display: flex;
-  border: 1px solid black;
+   
   
   margin: 10px 10px 0 10px;
   height: 61px;
 }
 
 .d-title-top {
-  border: 1px solid rgb(204, 207, 10);
+  
   margin: 25px 0 5px 0;
 }
 
@@ -251,12 +251,12 @@ figure, h3, h4, h5 {
   justify-content: space-between;
   
   height: 370px;
-  border: 1px solid rgb(32, 21, 197);
+  
   margin: 5px 10px 5px 10px;
 }
 
 .d-backgroundThumbnail {
-  border: 1px solid black;
+   
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -276,7 +276,7 @@ figure, h3, h4, h5 {
 }
 
 .d-legend {
-  border: 1px solid black;
+   
   margin-left: 10px;
   padding-top: 5px;
   font-size: 12px;
@@ -284,12 +284,12 @@ figure, h3, h4, h5 {
 }
 
 .d-rating {
-  border: 1px solid black;
+   
   color: #0065FC;
 }
 
 .d-button-title {
-  border: 1px solid black;
+   
   
   height: 30px;
   margin: 20px 10px 5px 10px;
@@ -299,7 +299,7 @@ figure, h3, h4, h5 {
 aside {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(241, 16, 16);
+  
   width: 365px;
   height: 500px;
   background-color: #F2F2F2;
@@ -310,7 +310,7 @@ aside {
 }
 
 .asideTitle {
-  border: 1px solid black;
+   
   display: flex;
   justify-content: space-between;
   width: 365px;
@@ -318,12 +318,12 @@ aside {
 }
 
 .a-title {
-  border: 1px solid black;
+   
   margin: 25px 20px 5px 30px;
 }
 
 .a-icon {
-  border: 1px solid black;
+   
   margin: 25px 30px 5px 10px;
 }
 
@@ -333,7 +333,7 @@ aside {
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid black;
+   
   margin-top: 5px;
   width: 365px;
   height: 430px;
@@ -342,7 +342,7 @@ aside {
 .a-backgroundThumbnail {
   display: flex;
   background-color: white;
-  border: 1px solid black;
+   
   box-shadow:2px 2px 10px #dddbdb;
   width: 300px;
   height: 115px;
@@ -359,19 +359,19 @@ aside {
 }
 
 .a-legend {
-  border: 1px solid black;
+   
   padding: 8px 20px 0 20px;
   width: 170px;
   font-size: 12px;
 }
 
 .a-price {
-  border: 1px solid black;
+   
   margin-top: 5px;
 }
 
 .a-rating {
-  border: 1px solid black;
+   
   padding-top: 15px;
   color: #0065FC;
 }
@@ -382,7 +382,7 @@ aside {
 
 /* Mise en forme BESIDE */
 .beside {
-  border: 1px solid rgb(9, 238, 21);
+  
   display: flex;
   flex-direction: column;
   
@@ -391,7 +391,7 @@ aside {
 
 .b-title {
   display: flex;
-  border: 1px solid black;
+   
   padding-top: 20px;
   padding-bottom: 0;
   height: 35px;
@@ -399,13 +399,13 @@ aside {
 }
 
 .b-title-top {
-  border: 1px solid rgb(245, 222, 16);
+ 
   height: 20px;
   margin: 10px 0 5px 5px;
 }
 
 .b-bloc {
-  border: 1px solid rgb(248, 23, 6);
+  
   display: flex;
   justify-content: space-between;
   height: 360px;
@@ -413,7 +413,7 @@ aside {
 }
 
 .b-backgroundThumbnail-1, .b-backgroundThumbnail-4 {
-  border: 1px solid black;
+   
   width: 265px;
   height: 345px;
   border-radius: 20px;
@@ -431,13 +431,13 @@ aside {
 }
 
 .b-legend {
-  border: 1px solid black;
+   
   font-size: small;
   padding-left: 20px;
 }
 
 .b-bloc-mini {
-  border: 1px solid black;
+   
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -447,7 +447,7 @@ aside {
 }
 
 .b-bachgroundThumbnail-2 {
-  border: 1px solid black;
+   
   width: 265px;
   height: 175px;
   border-radius: 20px;
@@ -464,7 +464,7 @@ aside {
 }
 
 .b-bachgroundThumbnail-3 {
-  border: 1px solid black;
+   
   width: 265px;
   height: 130px;
   border-radius: 20px;
@@ -482,7 +482,7 @@ aside {
 }
 
 .b-bachgroundThumbnail-5 {
-  border: 1px solid black;
+   
   width: 265px;
   height: 155px;
   border-radius: 20px;
@@ -500,7 +500,7 @@ aside {
 }
 
 .b-bachgroundThumbnail-6 {
-  border: 1px solid black;
+   
   width: 265px;
   height: 150px;
   border-radius: 20px;
@@ -523,13 +523,13 @@ footer {
 }
 
 .liste {
-  border: 1px solid black;
+   
   display: flex;
   flex-wrap: wrap;
 }
 
 ul {
-  border: 1px solid black;
+   
   list-style: none;
   padding: 0;
   margin: 10px 200px 30px 40px;
