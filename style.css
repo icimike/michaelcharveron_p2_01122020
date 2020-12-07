@@ -6,6 +6,7 @@ body {
 
 /* Mise en forme HEADER */
 header {
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   height: 66px;
@@ -13,19 +14,22 @@ header {
 }
 
 .logo {
-  margin: 10px 0 0 40px;
+  border: 1px solid black;
+  margin-left: 40px;
   width: 100px;
   height: auto;
 }
 
 .nav-link {
-  margin: 10px;
+  border: 1px solid black;
+  margin-right: 40px;
   padding: 15px;
   font-weight: bold;
   font-size: 15px;
 }
 
 .n-link {
+  border: 1px solid black;
   text-decoration: none;
   color: #999999;
   padding: 0 30px;
@@ -44,6 +48,7 @@ header {
 }
 
 .n-signup {
+  border: 1px solid black;
   text-decoration: none;
   color: #0065FC;
   padding: 0 20px;
@@ -51,20 +56,25 @@ header {
   
 /* Mise en forme SECTION SEARCH */
 .search {
-  padding: 20px 0 30px 40px;
+  margin: 0 40px 0 40px;
+  border: 1px solid black;
+  
 }
 
 .s-title {
+  border: 1px solid black;
   font-size: medium;
   margin-bottom: 5px;
 }
 
 .s-subtitle {
+  border: 1px solid black;
   font-size: smaller;
   margin-top: 0;
 }
 
 .s-input {
+  border: 1px solid black;
   display: flex;
 }
 
@@ -102,13 +112,13 @@ header {
   cursor: pointer;
 }
 
-@media all and (min-width: 600px) and (max-width: 1280px) {
+@media all and (min-width: 768px) {
   .s-find-icon {
     display: none;
   }
 }
 
-@media all and (min-width: 10px) and (max-width:  599px) {
+@media all and (max-width:  767px) {
   .s-find {
     display: none;
   }
@@ -127,6 +137,7 @@ header {
 }
 
 .filters {
+  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -167,6 +178,7 @@ header {
 }
 
 .result {
+  border: 1px solid black;
   display: flex;
   margin-top: 15px;
 }
