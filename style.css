@@ -161,6 +161,21 @@ header {
   cursor: pointer;
 }
 
+.f-button:hover {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 20px;
+  margin: 0 20px 10px 0;
+  padding: 10px;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
 .f-icon {
   display: flex;
   align-items: center;
@@ -398,7 +413,7 @@ aside {
   margin: 5px;
 }
 
-.b-title-top {
+#b-title-top {
   border: 1px solid rgb(245, 222, 16);
   height: 20px;
   margin: 10px 0 5px 5px;
