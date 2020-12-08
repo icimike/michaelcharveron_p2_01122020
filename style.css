@@ -36,13 +36,7 @@ header {
   padding: 0 30px;
 }
 
-.n-link:hover {
-  color: #0065FC;
-  border-top: 2px solid #0065FC;
-  padding-top: 24px;
-}
-
-.n-link:focus {
+.n-link:hover, .n-link:focus {
   color: #0065FC;
   border-top: 2px solid #0065FC;
   padding-top: 24px;
@@ -75,7 +69,12 @@ header {
 .search {
   margin: 0 40px 0 40px;
   border: 1px solid black;
-  
+}
+
+@media all and (max-width: 767px) {
+  .search {
+    margin: 5px 10px 5px 10px;
+  }
 }
 
 .s-title {
@@ -88,11 +87,6 @@ header {
   border: 1px solid black;
   font-size: smaller;
   margin-top: 0;
-}
-
-.s-input {
-  border: 1px solid black;
-  display: flex;
 }
 
 .s-icon {
@@ -246,28 +240,45 @@ figure, h3, h4, h5 {
   border: 1px solid rgb(24, 197, 102);
   display: flex;
   justify-content: space-between;
-  
   margin: 5px 35px 0 35px;
+}
+
+@media all and (max-width: 767px) {
+  .displayAside {
+    border: 1px solid rgb(24, 197, 102);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px 0 5px 0;
+  }
 }
 
 .display {
   border: 1px solid rgb(230, 20, 20);
   display: flex;
   flex-direction: column;
- 
   min-width: 700px;
   height: 520px;
   background-color: #F2F2F2;
   border-radius: 15px;
   margin: 5px 20px 5px 5px;
-  
-  
+}
+
+@media all and (max-width: 767px) {
+  .display {
+    border: 1px solid rgb(230, 20, 20);
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    height: 1000px;
+    background-color: #F2F2F2;
+    border-radius: 0;
+    margin: 0;
+  }
 }
 
 .d-title {
   display: flex;
   border: 1px solid black;
-  
   margin: 10px 10px 0 10px;
   height: 61px;
 }
@@ -281,7 +292,6 @@ figure, h3, h4, h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   height: 370px;
   border: 1px solid rgb(32, 21, 197);
   margin: 5px 10px 5px 10px;
@@ -338,7 +348,20 @@ aside {
   border-radius: 15px;
   margin: 5px;
   padding: 10px;
-  
+}
+
+@media all and (max-width: 767px) {
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(241, 16, 16);
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 .asideTitle {
@@ -417,9 +440,26 @@ aside {
   border: 1px solid rgb(9, 238, 21);
   display: flex;
   flex-direction: column;
-  
   margin: 5px 35px 5px 35px;
 }
+
+@media all and (max-width: 767px) {
+  .beside {
+    border: 1px solid rgb(9, 238, 21);
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    width: auto;
+  }
+  .b-bloc {
+    border: 1px solid rgb(248, 23, 6);
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    margin: 0 5px 5px 5px;
+  }
+}
+
 
 .b-title {
   display: flex;
