@@ -269,8 +269,8 @@ figure, h3, h4, h5 {
     display: flex;
     flex-direction: column;
     min-width: auto;
-    height: 1000px;
-    background-color: #F2F2F2;
+    height: auto;
+    background-color: white;
     border-radius: 0;
     margin: 0;
   }
@@ -297,6 +297,17 @@ figure, h3, h4, h5 {
   margin: 5px 10px 5px 10px;
 }
 
+@media all and (max-width: 767px) {
+  .d-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid rgb(32, 21, 197);
+    margin: 5px 0px 5px 5px;
+  }
+}
+
 .d-backgroundThumbnail {
   border: 1px solid black;
   display: flex;
@@ -310,11 +321,36 @@ figure, h3, h4, h5 {
   cursor: pointer;  
 }
 
+@media all and (max-width: 767px) {
+  .d-backgroundThumbnail {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow:2px 2px 10px #dddbdb;
+    width: 265px;
+    height: 150px;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;  
+  }
+}
+
 .d-photo {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   width: 200px;
   height: 90px;
+}
+
+@media all and (max-width: 767px) {
+  .d-photo {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 90px;
+  }
 }
 
 .d-legend {
@@ -332,7 +368,6 @@ figure, h3, h4, h5 {
 
 .d-button-title {
   border: 1px solid black;
-  
   height: 30px;
   margin: 20px 10px 5px 10px;
 }
@@ -355,7 +390,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgb(241, 16, 16);
-    width: auto;
+    width: 450px;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 0px;
@@ -448,18 +483,11 @@ aside {
     border: 1px solid rgb(9, 238, 21);
     display: flex;
     flex-direction: column;
-    height: 1500px;
-    width: auto;
-  }
-  .b-bloc {
-    border: 1px solid rgb(248, 23, 6);
-    display: flex;
-    flex-direction: column;
-    height: 1500px;
-    margin: 0 5px 5px 5px;
+    height: auto;
+    width: 450px;
+    margin: 0;
   }
 }
-
 
 .b-title {
   display: flex;
@@ -484,6 +512,17 @@ aside {
   margin: 0 5px 5px 5px;
 }
 
+@media all and (max-width: 767px) {
+  .b-bloc {
+    border: 1px solid rgb(248, 23, 6);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 450px;
+    margin: 0 5px 5px 5px;
+  }
+}
+
 .b-backgroundThumbnail-1, .b-backgroundThumbnail-4 {
   border: 1px solid black;
   width: 265px;
@@ -494,6 +533,18 @@ aside {
   margin: 5px 0 0 5px;
 }
 
+@media all and (max-width: 767px) {
+  .b-backgroundThumbnail-1, .b-backgroundThumbnail-4 {
+    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px #dddbdb;
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
 .b-photo-1, .b-photo-4 {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -502,6 +553,15 @@ aside {
   margin-bottom: 10px;
 }
 
+@media all and (max-width: 767px) {
+  .b-photo-1, .b-photo-4 {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
 .b-legend {
   border: 1px solid black;
   font-size: small;
@@ -518,6 +578,17 @@ aside {
   margin: 5px;
 }
 
+@media all and (max-width: 767px) {
+  .b-bloc-mini {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: auto;
+    margin: 20px 0 20px 0;
+  }
+}
+
 .b-bachgroundThumbnail-2 {
   border: 1px solid black;
   width: 265px;
@@ -527,12 +598,35 @@ aside {
   cursor: pointer;
 }
 
+@media all and (max-width: 767px) {
+  .b-bachgroundThumbnail-2 {
+    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px #dddbdb;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+}
+
 .b-photo-2 {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   width: 265px;
   height: 130px;
   margin-bottom: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .b-photo-2 {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 100px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
 }
 
 .b-bachgroundThumbnail-3 {
@@ -544,6 +638,17 @@ aside {
   cursor: pointer;
 }
 
+@media all and (max-width: 767px) {
+  .b-bachgroundThumbnail-3 {
+    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px #dddbdb;
+    cursor: pointer;
+  }
+}
+
 .b-photo-3 {
   object-fit: cover;
   object-position: top 10px;
@@ -551,6 +656,17 @@ aside {
   width: 265px;
   height: 85px;
   margin-bottom: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .b-photo-3 {
+    object-fit: cover;
+    object-position: top 10px;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
 }
 
 .b-bachgroundThumbnail-5 {
@@ -562,6 +678,18 @@ aside {
   cursor: pointer;
 }
 
+@media all and (max-width: 767px) {
+  .b-bachgroundThumbnail-5 {
+    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px #dddbdb;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+}
+
 .b-photo-5 {
   object-fit: cover;
   object-position: top 10px;
@@ -569,6 +697,17 @@ aside {
   width: 265px;
   height: 110px;
   margin-bottom: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .b-photo-5 {
+    object-fit: cover;
+    object-position: top 10px;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
 }
 
 .b-bachgroundThumbnail-6 {
@@ -580,6 +719,17 @@ aside {
   cursor: pointer;
 }
 
+@media all and (max-width: 767px) {
+  .b-bachgroundThumbnail-6 {
+    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px #dddbdb;
+    cursor: pointer;
+  }
+}
+
 .b-photo-6 {
   object-fit: cover;
   object-position: top 10px;
@@ -587,6 +737,17 @@ aside {
   width: 265px;
   height: 105px;
   margin-bottom: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .b-photo-6 {
+    object-fit: cover;
+    object-position: top 10px;
+    border-radius: 20px 20px 0 0;
+    width: 265px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Mise en forme FOOTER */
