@@ -50,9 +50,6 @@ header {
 }
 
 .nav-link {
-  
- 
-  
   width: 270px;
   border: 1px solid rgb(23, 41, 202);
   padding: 15px 5px 5px 5px;
@@ -156,7 +153,7 @@ header {
 @media all and (max-width: 767px) {
   .search {
     margin: 5px 0px 10px 20px;
-    width: 300px;
+    width: auto;
     height: auto;
   }
 }
@@ -331,6 +328,7 @@ figure, h3, h4, h5 {
 .displayAside {
   border: 1px solid rgb(24, 197, 102);
   display: flex;
+ 
   justify-content: space-between;
   margin: 5px 35px 0 35px;
 }
@@ -341,9 +339,9 @@ figure, h3, h4, h5 {
     display: flex;
     flex-direction: column-reverse;
     margin: 5px 0 5px 0;
-    width: 320px;
+    width: auto;
     height: auto;
-    padding: 5px 10px 5px 0;
+    padding: 5px 0 5px 0;
   }
 }
 
@@ -351,8 +349,9 @@ figure, h3, h4, h5 {
   border: 1px solid rgb(230, 20, 20);
   display: flex;
   flex-direction: column;
-  min-width: 700px;
-  height: 520px;
+  
+  width: auto;
+  min-height: 500px;
   background-color: #F2F2F2;
   border-radius: 15px;
   margin: 5px 20px 5px 5px;
@@ -363,8 +362,9 @@ figure, h3, h4, h5 {
     border: 1px solid rgb(230, 20, 20);
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 300px;
+    
+    width: auto;
+    
     height: auto;
     background-color: white;
     border-radius: 0;
@@ -404,8 +404,9 @@ figure, h3, h4, h5 {
 .d-thumbnail {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 370px;
+  
+  justify-content: center;
+  height: auto;
   border: 1px solid rgb(32, 21, 197);
   margin: 5px 10px 5px 10px;
 }
@@ -415,6 +416,7 @@ figure, h3, h4, h5 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     height: auto;
     border: 1px solid rgb(32, 21, 197);
     margin: 5px 0px 5px 5px;
@@ -431,6 +433,7 @@ figure, h3, h4, h5 {
   height: 150px;
   border-radius: 25px;
   padding: 5px;
+  margin: 0 30px 30px 0;
   cursor: pointer;  
 }
 
@@ -490,8 +493,8 @@ aside {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(241, 16, 16);
-  width: 365px;
-  height: 500px;
+  max-width: 350px;
+  max-height: 500px;
   background-color: #F2F2F2;
   border-radius: 15px;
   margin: 5px;
@@ -503,11 +506,13 @@ aside {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgb(241, 16, 16);
-    width: 300px;
+    max-width: none;
+    width: auto;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 0px;
     margin: 0;
+    padding: 0;
     
   }
 }
@@ -518,6 +523,17 @@ aside {
   justify-content: space-between;
   width: 365px;
   height: 61px;
+}
+
+@media all and (max-width: 767px) {
+  .asideTitle {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
 }
 
 .a-title {
@@ -562,10 +578,10 @@ aside {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
     border: 1px solid rgb(216, 24, 174);
     margin-top: 5px;
-    width: 300px;
+    width: 100%;
     height: auto;
   }
 }
@@ -650,6 +666,7 @@ aside {
   border: 1px solid rgb(9, 238, 21);
   display: flex;
   flex-direction: column;
+  
   margin: 5px 35px 5px 35px;
 }
 
@@ -659,7 +676,7 @@ aside {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 330px;
+    width: auto;
     margin: 0;
   }
 }
@@ -682,7 +699,7 @@ aside {
 @media all and (max-width: 767px) {
   #b-title-top {
     border: 1px solid rgb(245, 222, 16);
-    height: 20px;
+    height: auto;
     margin: 10px 0 5px 15px;
   }
 }
@@ -691,7 +708,8 @@ aside {
   border: 1px solid rgb(248, 23, 6);
   display: flex;
   justify-content: space-between;
-  height: 360px;
+  flex-wrap: wrap;
+  min-height: 360px;
   margin: 0 5px 5px 5px;
 }
 
@@ -700,10 +718,11 @@ aside {
     border: 1px solid rgb(248, 23, 6);
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: auto;
-    width: 300px;
+    width: auto;
     margin: 0;
-    padding-left: 20px;
+    
   }
 }
 
