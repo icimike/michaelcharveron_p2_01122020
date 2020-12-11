@@ -138,7 +138,7 @@ header {
     color: #0065FC;
     font-weight: 700;
     padding: 0 20px;
-    margin: 0px 20px 30px 200px
+    margin: 0px 20px 30px 300px
     }
 }
   
@@ -417,7 +417,7 @@ figure, h3, h4, h5 {
     align-items: center;
     height: auto;
     border: 1px solid rgb(32, 21, 197);
-    margin: 5px 0px 5px 5px;
+    margin: 5px 20px 5px 20px;
   }
 }
 
@@ -442,12 +442,12 @@ figure, h3, h4, h5 {
     flex-direction: column;
     background-color: white;
     box-shadow:2px 2px 10px #dddbdb;
-    width: 265px;
-    height: 150px;
+    width: 95%;
+    height: 190px;
     border-radius: 25px;
     padding: 5px;
     cursor: pointer;
-    margin: 5px;  
+    margin: 5px 5px 10px 5px;  
   }
 }
 
@@ -462,8 +462,8 @@ figure, h3, h4, h5 {
   .d-photo {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 90px;
+    width: 100%;
+    height: 110px;
   }
 }
 
@@ -475,15 +475,29 @@ figure, h3, h4, h5 {
   line-height: 5px;
 }
 
+@media all and (max-width: 767px) {
+  .d-legend {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
 .d-rating {
   border: 1px solid black;
   color: #0065FC;
 }
 
-.d-button-title {
+.d-botton-title {
   border: 1px solid black;
   height: 30px;
   margin: 20px 10px 5px 10px;
+}
+
+@media all and (max-width: 767px) {
+  .d-botton-title {
+    font-size: 19px;
+    margin: 5px 0 0 20px;
+  }
 }
 
 /* Mise en forme ASIDE */
@@ -601,7 +615,7 @@ aside {
     background-color: white;
     border: 1px solid black;
     box-shadow:2px 2px 10px #dddbdb;
-    width: 100%;
+    width: 95%;
     min-height: 150px;
     border-radius: 25px;
     padding: 5px;
@@ -637,8 +651,8 @@ aside {
   .a-legend {
     border: 1px solid black;
     padding: 10px 0 0 20px;
-    min-width: 230px;
-    font-size: 18px;
+    min-width: 200px;
+    font-size: 16px;
   }
 }
 
@@ -717,7 +731,7 @@ aside {
     align-items: center;
     height: auto;
     width: auto;
-    margin: 0;
+    margin: 0 30px 0 30px;
     
   }
 }
@@ -735,8 +749,8 @@ aside {
 @media all and (max-width: 767px) {
   .b-backgroundThumbnail-1, .b-backgroundThumbnail-4 {
     border: 1px solid black;
-    width: 265px;
-    height: 145px;
+    width: 95%;
+    height: 190px;
     border-radius: 20px;
     box-shadow:2px 2px 10px #dddbdb;
     cursor: pointer;
@@ -754,11 +768,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-photo-1, .b-photo-4 {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 130px;
   }
 }
 .b-legend {
@@ -782,7 +793,7 @@ aside {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    width: 265px;
+    width: 95%;
     height: auto;
     margin: 20px 0 20px 0;
   }
@@ -800,8 +811,8 @@ aside {
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-2 {
     border: 1px solid black;
-    width: 265px;
-    height: 145px;
+    width: 100%;
+    height: 190px;
     border-radius: 20px;
     box-shadow:2px 2px 10px #dddbdb;
     cursor: pointer;
@@ -821,8 +832,8 @@ aside {
   .b-photo-2 {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     margin-bottom: 0;
     padding-bottom: 10px;
   }
@@ -840,8 +851,8 @@ aside {
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-3 {
     border: 1px solid black;
-    width: 265px;
-    height: 145px;
+    width: 100%;
+    height: 190px;
     border-radius: 20px;
     box-shadow:2px 2px 10px #dddbdb;
     cursor: pointer;
@@ -860,8 +871,8 @@ aside {
   .b-photo-3 {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     margin-bottom: 10px;
   }
 }
@@ -878,8 +889,8 @@ aside {
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-5 {
     border: 1px solid black;
-    width: 265px;
-    height: 145px;
+    width: 100%;
+    height: 190px;
     border-radius: 20px;
     box-shadow:2px 2px 10px #dddbdb;
     cursor: pointer;
@@ -899,8 +910,8 @@ aside {
   .b-photo-5 {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     margin-bottom: 10px;
   }
 }
@@ -917,8 +928,8 @@ aside {
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-6 {
     border: 1px solid black;
-    width: 265px;
-    height: 145px;
+    width: 100%;
+    height: 190px;
     border-radius: 20px;
     box-shadow:2px 2px 10px #dddbdb;
     cursor: pointer;
@@ -937,8 +948,8 @@ aside {
   .b-photo-6 {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    width: 265px;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     margin-bottom: 10px;
   }
 }
@@ -968,7 +979,7 @@ ul {
     border: 1px solid black;
     list-style: none;
     padding: 0;
-    margin: 0px 200px 20px 20px;
+    margin: 0px 200px 20px 30px;
     font-size: 13px;
     line-height: 20px;
   }
