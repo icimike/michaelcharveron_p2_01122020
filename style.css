@@ -73,10 +73,8 @@ header {
   border: 1px solid rgb(187, 21, 21);
   text-decoration: none;
   color: #6d6d6d;
-  
   padding: 0 20px 0 20px;
   width: 100px;
-  
 }
 
 @media all and (max-width: 767px) {
@@ -852,7 +850,6 @@ aside {
 
 .b-photo-3 {
   object-fit: cover;
-  object-position: top 10px;
   border-radius: 20px 20px 0 0;
   width: 265px;
   height: 85px;
@@ -862,7 +859,6 @@ aside {
 @media all and (max-width: 767px) {
   .b-photo-3 {
     object-fit: cover;
-    object-position: top 10px;
     border-radius: 20px 20px 0 0;
     width: 265px;
     height: 100px;
@@ -893,7 +889,6 @@ aside {
 
 .b-photo-5 {
   object-fit: cover;
-  object-position: top 10px;
   border-radius: 20px 20px 0 0;
   width: 265px;
   height: 110px;
@@ -903,7 +898,6 @@ aside {
 @media all and (max-width: 767px) {
   .b-photo-5 {
     object-fit: cover;
-    object-position: top 10px;
     border-radius: 20px 20px 0 0;
     width: 265px;
     height: 100px;
@@ -933,7 +927,6 @@ aside {
 
 .b-photo-6 {
   object-fit: cover;
-  object-position: top 10px;
   border-radius: 20px 20px 0 0;
   width: 265px;
   height: 105px;
@@ -943,7 +936,6 @@ aside {
 @media all and (max-width: 767px) {
   .b-photo-6 {
     object-fit: cover;
-    object-position: top 10px;
     border-radius: 20px 20px 0 0;
     width: 265px;
     height: 100px;
