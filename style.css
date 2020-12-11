@@ -769,15 +769,21 @@ aside {
 @media all and (max-width: 767px) {
   .b-photo-1, .b-photo-4 {
     width: 100%;
-    height: 130px;
+    height: 140px;
   }
 }
+
 .b-legend {
   border: 1px solid black;
   font-size: small;
   padding-left: 20px;
 }
 
+@media all and (max-width: 767px) {
+  .b-legend {
+    font-size: 16px;
+  }
+}
 .b-bloc-mini {
   border: 1px solid black;
   display: flex;
@@ -833,7 +839,7 @@ aside {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 130px;
+    height: 140px;
     margin-bottom: 0;
     padding-bottom: 10px;
   }
@@ -872,7 +878,7 @@ aside {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 130px;
+    height: 140px;
     margin-bottom: 10px;
   }
 }
@@ -911,7 +917,7 @@ aside {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 130px;
+    height: 140px;
     margin-bottom: 10px;
   }
 }
@@ -949,7 +955,7 @@ aside {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 130px;
+    height: 140px;
     margin-bottom: 10px;
   }
 }
