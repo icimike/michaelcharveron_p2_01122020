@@ -8,7 +8,7 @@ body {
 header {
   border: 1px solid black;
   display: flex;
-  height: 100px;
+  height: auto;
   align-items: center;
 }
 
@@ -29,7 +29,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 50px;
   justify-content: space-between;
   margin: 10px 0 10px 40px;
   padding: 5px;
@@ -38,6 +38,7 @@ header {
 @media all and (max-width: 767px) {
   .logo-nav {
     margin: 0;
+    height: auto;
   }
 }
 
@@ -299,16 +300,12 @@ figure, h3, h4, h5 {
   border: 1px solid rgb(24, 197, 102);
   display: flex;
   flex-wrap: wrap-reverse;
-  
   justify-content: space-between;
-  
   margin: 0 40px 0 40px;
 }
 
 @media all and (max-width: 767px) {
   .displayAside {
-    
-    
     flex-direction: column-reverse;
     margin: 0;
     width: auto;
@@ -325,8 +322,19 @@ figure, h3, h4, h5 {
   height: auto;
   background-color: #F2F2F2;
   border-radius: 15px;
-  
-  
+}
+
+@media all and (max-width: 1250px) {
+  .display {
+    border: 1px solid rgb(230, 20, 20);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 0 auto 0 auto;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -475,9 +483,21 @@ aside {
   max-width: 360px;
   background-color: #F2F2F2;
   border-radius: 15px;
-  
-  
 }
+
+@media all and (max-width: 1250px) {
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(241, 16, 16);
+    max-width: 100%;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+  }
+}
+
 
 @media all and (max-width: 767px) {
   aside {
@@ -542,13 +562,23 @@ aside {
 .a-thumbnail {
   display: flex;
   flex-direction: column;
-  
   flex-wrap: wrap;
-  
   border: 1px solid rgb(68, 31, 233);
   margin: 0 30px 0 30px;
- 
 }
+
+@media all and (max-width: 1250px) {
+  .a-thumbnail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(68, 31, 233);
+    margin: 0 30px 0 30px;
+}
+}
+
 
 @media all and (max-width: 767px) {
   .a-thumbnail {
