@@ -20,10 +20,7 @@ header {
 
 @media all and (max-width: 767px) {
   .logo {
-    border: 1px solid black;
     margin: 10px 20px 10px 10px;
-    width: 100px;
-    height: auto;
   }
 }
 
@@ -39,13 +36,7 @@ header {
 
 @media all and (max-width: 767px) {
   .logo-nav {
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
     margin: 0;
-    padding: 5px;
   }
 }
 
@@ -53,7 +44,6 @@ header {
   width: auto;
   border: 1px solid rgb(23, 41, 202);
   padding: 15px 5px 5px 5px;
-  
   font-weight: 600;
   font-size: 15px;
 }
@@ -61,11 +51,9 @@ header {
 @media all and (max-width: 767px) {
   .nav-link {
     display: flex;
-    border: 1px solid black;
+    border: 1px solid blue;
     width: 100%;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 15px;
+    padding: 0px;
   }
 }
 
@@ -80,12 +68,9 @@ header {
 @media all and (max-width: 767px) {
   .n-link {
     border-bottom: 2px solid #F2F2F2;
-    text-decoration: none;
-    color: #6d6d6d;
     width: 100%;
     padding-left: 60px;
     padding-bottom: 10px;
-    
   }
 }
 
@@ -96,15 +81,7 @@ header {
 }
 
 @media all and (max-width: 767px) {
-  .n-link:hover {
-    color: #0065FC;
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  .n-link:focus {
-    color: #0065FC;
+  .n-link:hover, .n-link:focus {
     border-top: none;
     border-bottom: 2px solid #0065FC;
     padding-top: 0;
@@ -131,16 +108,18 @@ header {
   .n-signup {
     display: none;
   }
-  .n-signup-device {
-    position: absolute;
-    border: 1px solid black;
-    text-decoration: none;
-    color: #0065FC;
-    font-weight: 700;
-    padding: 0 20px;
-    margin: 0px 20px 30px 300px
-    }
 }
+
+.n-signup-device {
+  position: absolute;
+  border: 1px solid black;
+  text-decoration: none;
+  color: #0065FC;
+  font-weight: 700;
+  padding: 0 20px;
+  margin: 0px 20px 30px 300px
+}
+
   
 /* Mise en forme SECTION SEARCH */
 .search {
@@ -150,7 +129,7 @@ header {
 
 @media all and (max-width: 767px) {
   .search {
-    margin: 5px 0px 10px 20px;
+    margin: 5px 0 10px 20px;
     width: auto;
     height: auto;
   }
@@ -212,17 +191,10 @@ header {
   .s-find {
     display: none;
   }
-
   .s-button {
-    background-color: #0065FC;
-    color: white;
-    border: none;
     border-radius: 10px;
-    padding: 0 10px;
     width: 45px;
-    height: 40px;
     font-size: 14px;
-    font-weight: bold; 
   }
 }
 
@@ -241,8 +213,7 @@ header {
 
 @media all and (max-width: 767px) {
   .f-title {
-    display: flex;
-    align-items: center;
+    border: 1px solid black;
     margin: 0 300px 10px 0;
   }
 }
@@ -293,7 +264,7 @@ header {
 .result {
   border: 1px solid black;
   display: flex;
-  margin-top: 15px;
+  margin: 15px 0 25px 0;
 }
 
 .r-icon {
@@ -326,17 +297,19 @@ figure, h3, h4, h5 {
 .displayAside {
   border: 1px solid rgb(24, 197, 102);
   display: flex;
- 
+  flex-wrap: wrap-reverse;
+  
   justify-content: space-between;
-  margin: 5px 35px 0 35px;
+  
+  margin: 0 40px 0 40px;
 }
 
 @media all and (max-width: 767px) {
   .displayAside {
-    border: 1px solid rgb(24, 197, 102);
-    display: flex;
+    
+    
     flex-direction: column-reverse;
-    margin: 5px 0 5px 0;
+    margin: 0;
     width: auto;
     height: auto;
     padding: 5px 0 5px 0;
@@ -347,22 +320,17 @@ figure, h3, h4, h5 {
   border: 1px solid rgb(230, 20, 20);
   display: flex;
   flex-direction: column;
-  
-  width: auto;
-  min-height: 500px;
+  max-width: 767px;
+  height: auto;
   background-color: #F2F2F2;
   border-radius: 15px;
-  margin: 5px 20px 5px 5px;
+  
+  
 }
 
 @media all and (max-width: 767px) {
   .display {
-    border: 1px solid rgb(230, 20, 20);
-    display: flex;
-    flex-direction: column;
-    
     width: auto;
-    
     height: auto;
     background-color: white;
     border-radius: 0;
@@ -373,9 +341,10 @@ figure, h3, h4, h5 {
 
 .d-title {
   display: flex;
+  align-items: center;
   border: 1px solid black;
-  margin: 10px 10px 0 10px;
-  height: 61px;
+  
+  height: 60px;
 }
 
 @media all and (max-width: 767px) { 
@@ -389,12 +358,11 @@ figure, h3, h4, h5 {
 
 .d-title-top {
   border: 1px solid rgb(204, 207, 10);
-  margin: 25px 0 5px 0;
+  margin-left: 30px;
 }
 
 @media all and (max-width: 767px) {
   .d-title-top {
-    border: 1px solid rgb(204, 207, 10);
     margin: 0;
   }
 }
@@ -402,12 +370,11 @@ figure, h3, h4, h5 {
 .d-thumbnail {
   display: flex;
   flex-wrap: wrap;
-  
-  justify-content: center;
-  height: auto;
+  justify-content: space-between;
   border: 1px solid rgb(32, 21, 197);
-  margin: 5px 10px 5px 10px;
+  margin: 0 30px 0 30px;
 }
+
 
 @media all and (max-width: 767px) {
   .d-thumbnail {
@@ -427,11 +394,11 @@ figure, h3, h4, h5 {
   flex-direction: column;
   background-color: white;
   box-shadow:2px 2px 10px #dddbdb;
-  width: 200px;
+  width: 190px;
   height: 150px;
   border-radius: 25px;
   padding: 5px;
-  margin: 0 30px 30px 0;
+  margin-bottom: 20px;
   cursor: pointer;  
 }
 
@@ -454,7 +421,7 @@ figure, h3, h4, h5 {
 .d-photo {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  width: 200px;
+  width: 190px;
   height: 90px;
 }
 
@@ -489,8 +456,7 @@ figure, h3, h4, h5 {
 
 .d-botton-title {
   border: 1px solid black;
-  height: 30px;
-  margin: 20px 10px 5px 10px;
+  margin: 10px 30px 5px 30px;
 }
 
 @media all and (max-width: 767px) {
@@ -505,12 +471,11 @@ aside {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(241, 16, 16);
-  max-width: 350px;
-  max-height: 500px;
+  max-width: 360px;
   background-color: #F2F2F2;
   border-radius: 15px;
-  margin: 5px;
-  padding: 10px;
+  
+  
 }
 
 @media all and (max-width: 767px) {
@@ -533,8 +498,9 @@ aside {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
-  width: 365px;
-  height: 61px;
+  align-items: center;
+  width: 100%;
+  height: 60px;
 }
 
 @media all and (max-width: 767px) {
@@ -549,8 +515,8 @@ aside {
 }
 
 .a-title {
-  border: 1px solid black;
-  margin: 25px 20px 5px 30px;
+  border: 1px solid rgb(226, 212, 17);
+  margin-left: 30px;
 }
 
 @media all and (max-width: 767px) {
@@ -561,8 +527,8 @@ aside {
 }
 
 .a-icon {
-  border: 1px solid black;
-  margin: 25px 30px 5px 10px;
+  border: 1px solid rgb(235, 220, 17);
+  margin-right: 30px;
 }
 
 @media all and (max-width: 767px) {
@@ -575,13 +541,12 @@ aside {
 .a-thumbnail {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  
   flex-wrap: wrap;
-  justify-content: space-between;
-  border: 1px solid black;
-  margin-top: 5px;
-  width: 365px;
-  height: 430px;
+  
+  border: 1px solid rgb(68, 31, 233);
+  margin: 0 30px 0 30px;
+ 
 }
 
 @media all and (max-width: 767px) {
@@ -602,10 +567,11 @@ aside {
   background-color: white;
   border: 1px solid black;
   box-shadow:2px 2px 10px #dddbdb;
-  width: 300px;
-  height: 115px;
+  width: 285px;
+  height: 105px;
   border-radius: 25px;
   padding: 5px;
+  margin-bottom: 20px;
   cursor: pointer;  
 }
 
@@ -627,8 +593,8 @@ aside {
 .a-photo {
   object-fit: cover;
   border-radius: 20px 0 0 20px;
-  width: 120px;
-  height: 115px;
+  width: 98px;
+  height: 105px;
 }
 
 @media all and (max-width: 767px) {
@@ -663,7 +629,7 @@ aside {
 
 .a-rating {
   border: 1px solid black;
-  padding-top: 15px;
+  padding-top: 10px;
   color: #0065FC;
 }
 
@@ -676,8 +642,7 @@ aside {
   border: 1px solid rgb(9, 238, 21);
   display: flex;
   flex-direction: column;
-  
-  margin: 5px 35px 5px 35px;
+  margin: 20px 40px 0 40px;
 }
 
 @media all and (max-width: 767px) {
@@ -693,17 +658,14 @@ aside {
 
 .b-title {
   display: flex;
+  align-items: center;
   border: 1px solid black;
-  padding-top: 20px;
-  padding-bottom: 0;
-  height: 35px;
-  margin: 5px;
+  height: 60px;
+  
 }
 
 #b-title-top {
   border: 1px solid rgb(245, 222, 16);
-  height: 20px;
-  margin: 10px 0 5px 5px;
 }
 
 @media all and (max-width: 767px) {
@@ -719,8 +681,6 @@ aside {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 360px;
-  margin: 0 5px 5px 5px;
 }
 
 @media all and (max-width: 767px) {
@@ -743,7 +703,6 @@ aside {
   border-radius: 20px;
   box-shadow:2px 2px 10px #dddbdb;
   cursor: pointer;
-  margin: 5px 0 0 5px;
 }
 
 @media all and (max-width: 767px) {
@@ -791,7 +750,7 @@ aside {
   justify-content: space-between;
   width: 265px;
   height: 345px;
-  margin: 5px;
+  
 }
 
 @media all and (max-width: 767px) {
