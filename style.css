@@ -6,9 +6,8 @@ body {
 
 /* Mise en forme HEADER */
 header {
-  border: 1px solid black;
   display: flex;
-  height: auto;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,113 +15,86 @@ header {
   border: 1px solid black;
   width: 100px;
   height: auto;
+  margin: 20px 0 20px 40px;
 }
 
 @media all and (max-width: 767px) {
   .logo {
-    margin: 10px 20px 10px 10px;
-  }
-}
-
-.logo-nav {
-  border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50px;
-  justify-content: space-between;
-  margin: 10px 0 10px 40px;
-  padding: 5px;
-}
-
-@media all and (max-width: 767px) {
-  .logo-nav {
-    margin: 0;
-    height: auto;
+    margin: 20px 0 20px 20px;
   }
 }
 
 .nav-link {
-  width: auto;
-  border: 1px solid rgb(23, 41, 202);
-  padding: 15px 5px 5px 5px;
-  font-weight: 600;
-  font-size: 15px;
+  border: 1px solid black;
+  margin-right: 40px;
 }
 
 @media all and (max-width: 767px) {
   .nav-link {
-    display: flex;
-    border: 1px solid blue;
-    width: 100%;
-    padding: 0px;
+    margin-right: 20px;
   }
 }
 
 .n-link {
-  border: 1px solid rgb(187, 21, 21);
+  border: 1px solid black;
   text-decoration: none;
-  color: #6d6d6d;
-  padding: 0 20px 0 20px;
-  width: 100px;
+  font-weight: 600;
+  padding: 0 30px 0 30px;
+  color: gray;
 }
+
 
 @media all and (max-width: 767px) {
   .n-link {
-    border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-    padding-left: 60px;
-    padding-bottom: 10px;
+    display: none;
   }
 }
 
 .n-link:hover, .n-link:focus {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 30px;
+}
+
+.n-signup {
   color: #0065FC;
-  border-top: 2px solid #0065FC;
-  padding-top: 30px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 30px 0 30px;
 }
 
 @media all and (max-width: 767px) {
-  .n-link:hover, .n-link:focus {
-    border-top: none;
+  .nav-link-device {
+    display: flex;
+    justify-content: center;
+  }
+
+  .n-link-device {
+    width: 100%;
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F2F2F2;
+    
+  }
+
+  .n-link-device:hover, .n-link-device:focus {
+    color: #0065FC;
     border-bottom: 2px solid #0065FC;
-    padding-top: 0;
     padding-bottom: 10px;
   }
 }
 
-.n-signup, .n-signup-device {
-  border: 1px solid black;
-  text-decoration: none;
-  color: #0065FC;
-  font-weight: 700;
-  padding: 0 20px;
-  margin-right: 40px;
-  }
-
 @media all and (min-width: 768px) {
-  .n-signup-device {
-    display: none;
-  }  
-}
-  
-@media all and (max-width: 767px) {
-  .n-signup {
+  .nav-link-device, .n-link-device {
     display: none;
   }
 }
 
-.n-signup-device {
-  position: absolute;
-  border: 1px solid black;
-  text-decoration: none;
-  color: #0065FC;
-  font-weight: 700;
-  padding: 0 20px;
-  margin: 0px 20px 30px 300px
-}
-
-  
 /* Mise en forme SECTION SEARCH */
 .search {
   margin: 0 40px 0 40px;
@@ -131,7 +103,7 @@ header {
 
 @media all and (max-width: 767px) {
   .search {
-    margin: 5px 0 10px 20px;
+    margin: 5px 20px 10px 20px;
     width: auto;
     height: auto;
   }
@@ -310,7 +282,6 @@ figure, h3, h4, h5 {
     margin: 0;
     width: auto;
     height: auto;
-    padding: 5px 0 5px 0;
   }
 }
 
@@ -326,13 +297,7 @@ figure, h3, h4, h5 {
 
 @media all and (max-width: 1250px) {
   .display {
-    border: 1px solid rgb(230, 20, 20);
-    display: flex;
-    flex-direction: column;
     max-width: 100%;
-    height: auto;
-    background-color: #F2F2F2;
-    border-radius: 15px;
     margin: 0 auto 0 auto;
   }
 }
@@ -342,9 +307,6 @@ figure, h3, h4, h5 {
     width: auto;
     height: auto;
     background-color: white;
-    border-radius: 0;
-    margin: 0;
-    padding: 10px;
   }
 }
 
@@ -352,17 +314,7 @@ figure, h3, h4, h5 {
   display: flex;
   align-items: center;
   border: 1px solid black;
-  
   height: 60px;
-}
-
-@media all and (max-width: 767px) { 
-  .d-title {
-    display: flex;
-    border: 1px solid black;
-    margin: 10px 0 10px 10px;
-    height: auto;
-  }
 }
 
 .d-title-top {
@@ -372,7 +324,7 @@ figure, h3, h4, h5 {
 
 @media all and (max-width: 767px) {
   .d-title-top {
-    margin: 0;
+    margin-left: 20px;
   }
 }
 
@@ -384,16 +336,12 @@ figure, h3, h4, h5 {
   margin: 0 30px 0 30px;
 }
 
-
 @media all and (max-width: 767px) {
   .d-thumbnail {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     height: auto;
-    border: 1px solid rgb(32, 21, 197);
-    margin: 5px 20px 5px 20px;
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -413,17 +361,8 @@ figure, h3, h4, h5 {
 
 @media all and (max-width: 767px) {
   .d-backgroundThumbnail {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow:2px 2px 10px #dddbdb;
-    width: 95%;
+    width: 98%;
     height: 190px;
-    border-radius: 25px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 5px 5px 10px 5px;  
   }
 }
 
@@ -436,8 +375,6 @@ figure, h3, h4, h5 {
 
 @media all and (max-width: 767px) {
   .d-photo {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 110px;
   }
@@ -471,7 +408,7 @@ figure, h3, h4, h5 {
 @media all and (max-width: 767px) {
   .d-botton-title {
     font-size: 19px;
-    margin: 5px 0 0 20px;
+    margin: 5px 0 10px 20px;
   }
 }
 
@@ -487,13 +424,8 @@ aside {
 
 @media all and (max-width: 1250px) {
   aside {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid rgb(241, 16, 16);
     max-width: 100%;
     width: 100%;
-    background-color: #F2F2F2;
-    border-radius: 15px;
     margin: 0 auto 20px auto;
   }
 }
@@ -501,17 +433,9 @@ aside {
 
 @media all and (max-width: 767px) {
   aside {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid rgb(241, 16, 16);
     max-width: none;
     width: auto;
-    min-height: 600px;
-    background-color: #F2F2F2;
     border-radius: 0px;
-    margin: 0;
-    padding: 0;
-    
   }
 }
 
@@ -524,17 +448,6 @@ aside {
   height: 60px;
 }
 
-@media all and (max-width: 767px) {
-  .asideTitle {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    margin: 5px;
-  }
-}
-
 .a-title {
   border: 1px solid rgb(226, 212, 17);
   margin-left: 30px;
@@ -542,8 +455,7 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-title {
-    border: 1px solid black;
-    margin: 25px 20px 5px 10px;
+    margin-left: 20px;
   }
 }
 
@@ -554,8 +466,7 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-icon {
-    border: 1px solid black;
-    margin: 25px 15px 5px 15px;
+    margin-right: 20px;
   }
 }
 
@@ -569,25 +480,17 @@ aside {
 
 @media all and (max-width: 1250px) {
   .a-thumbnail {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid rgb(68, 31, 233);
-    margin: 0 30px 0 30px;
-}
+  }
 }
 
 
 @media all and (max-width: 767px) {
   .a-thumbnail {
-    display: flex;
-    flex-direction: column;
     align-content: center;
-    flex-wrap: wrap;
-    border: 1px solid rgb(216, 24, 174);
-    margin: 5px 30px 5px 30px;
+    margin: 0 20px 0 20px;
     width: 100%;
     height: auto;
   }
@@ -608,16 +511,9 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-backgroundThumbnail {
-    display: flex;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow:2px 2px 10px #dddbdb;
-    width: 95%;
+    width: 98%;
     min-height: 150px;
     border-radius: 25px;
-    padding: 5px;
-    margin: 0 10px 10px 10px;
-    cursor: pointer;
   }
 }
 
@@ -630,8 +526,6 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-photo {
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
     min-width: 150px;
     min-height: 150px;
   }
@@ -646,7 +540,6 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-legend {
-    border: 1px solid black;
     padding: 10px 0 0 20px;
     min-width: 200px;
     font-size: 16px;
@@ -664,6 +557,12 @@ aside {
   color: #0065FC;
 }
 
+@media all and (max-width: 767px) {
+  .a-rating {
+    padding-top: 20px;
+  }
+}
+
 .star-1, .star-2 {
   color: #F2F2F2;
 }
@@ -678,9 +577,6 @@ aside {
 
 @media all and (max-width: 767px) {
   .beside {
-    border: 1px solid rgb(9, 238, 21);
-    display: flex;
-    flex-direction: column;
     height: auto;
     width: auto;
     margin: 0;
@@ -701,9 +597,7 @@ aside {
 
 @media all and (max-width: 767px) {
   #b-title-top {
-    border: 1px solid rgb(245, 222, 16);
-    height: auto;
-    margin: 10px 0 5px 15px;
+    margin-left: 20px;
   }
 }
 
@@ -716,14 +610,9 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-bloc {
-    border: 1px solid rgb(248, 23, 6);
-    display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
-    width: auto;
-    margin: 0 30px 0 30px;
-    
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -738,13 +627,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-backgroundThumbnail-1, .b-backgroundThumbnail-4 {
-    border: 1px solid black;
-    width: 95%;
+    width: 99%;
     height: 190px;
-    border-radius: 20px;
-    box-shadow:2px 2px 10px #dddbdb;
-    cursor: pointer;
-    margin: 0;
   }
 }
 
@@ -774,6 +658,7 @@ aside {
     font-size: 16px;
   }
 }
+
 .b-bloc-mini {
   border: 1px solid black;
   display: flex;
@@ -781,15 +666,11 @@ aside {
   justify-content: space-between;
   width: 265px;
   height: 345px;
-  
 }
 
 @media all and (max-width: 767px) {
   .b-bloc-mini {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
+    width: 99%;
     height: auto;
     margin: 20px 0 20px 0;
   }
@@ -806,12 +687,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-2 {
-    border: 1px solid black;
     width: 100%;
     height: 190px;
-    border-radius: 20px;
-    box-shadow:2px 2px 10px #dddbdb;
-    cursor: pointer;
     margin-bottom: 20px;
   }
 }
@@ -826,12 +703,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-photo-2 {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 140px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
   }
 }
 
@@ -846,12 +719,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-3 {
-    border: 1px solid black;
     width: 100%;
     height: 190px;
-    border-radius: 20px;
-    box-shadow:2px 2px 10px #dddbdb;
-    cursor: pointer;
   }
 }
 
@@ -865,8 +734,6 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-photo-3 {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 140px;
     margin-bottom: 10px;
@@ -878,18 +745,14 @@ aside {
   width: 265px;
   height: 155px;
   border-radius: 20px;
-  box-shadow:2px 2px 10px #dddbdb;
+  box-shadow: 2px 2px 10px #dddbdb;
   cursor: pointer;
 }
 
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-5 {
-    border: 1px solid black;
     width: 100%;
     height: 190px;
-    border-radius: 20px;
-    box-shadow:2px 2px 10px #dddbdb;
-    cursor: pointer;
     margin-bottom: 20px;
   }
 }
@@ -904,11 +767,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-photo-5 {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 140px;
-    margin-bottom: 10px;
   }
 }
 
@@ -923,12 +783,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-bachgroundThumbnail-6 {
-    border: 1px solid black;
     width: 100%;
     height: 190px;
-    border-radius: 20px;
-    box-shadow:2px 2px 10px #dddbdb;
-    cursor: pointer;
   }
 }
 
@@ -942,11 +798,8 @@ aside {
 
 @media all and (max-width: 767px) {
   .b-photo-6 {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 140px;
-    margin-bottom: 10px;
   }
 }
 
@@ -972,12 +825,7 @@ ul {
 
 @media all and (max-width: 767px) {
   ul {
-    border: 1px solid black;
-    list-style: none;
-    padding: 0;
-    margin: 0px 200px 20px 30px;
-    font-size: 13px;
-    line-height: 20px;
+    margin: 10px 200px 20px 20px;
   }
 }
 
@@ -992,6 +840,5 @@ ul {
 }
 
 .l-link:hover {
-  text-decoration: none;
   color: black;
 }
