@@ -221,6 +221,7 @@ figure, h3, h4, h5 {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
+  max-width: 1280px;
   margin: 0 40px 0 40px;
 }
 .display {
@@ -442,6 +443,7 @@ aside {
 .beside {
   display: flex;
   flex-direction: column;
+  max-width: 1280px;
   margin: 20px 40px 0 40px;
 }
 .b-title {
