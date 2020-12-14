@@ -293,6 +293,7 @@ figure, h3, h4, h5 {
   }
   .display {
     background-color: white;
+    margin: 0;
   }
   .d-title-top {
     margin-left: 20px;
