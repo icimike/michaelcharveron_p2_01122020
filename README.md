@@ -3,12 +3,17 @@ Projet 2 OpenClassrooms "Reservia"
 Scénario :
 Intégrer une maquette responsive en HTML et CSS.
 
+<<<<<<< HEAD
 <<<<<<< 9a8fef40e25c3bc1165ede123e3325770a0d803a
 ![maquette web reservia](./imgages/desktop.png)
 =======
 <img src="./images/Desktop.png">
 
 >>>>>>> Update README.md
+=======
+<img src="./images/Desktop.png">
+
+>>>>>>> master
 
 
     Fonctionnalités
