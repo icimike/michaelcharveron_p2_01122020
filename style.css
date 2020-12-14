@@ -290,8 +290,7 @@ figure, h3, h4, h5 {
 
 @media all and (max-width: 767px) {
   .display {
-    width: auto;
-    height: auto;
+    max-width: auto;
     background-color: white;
   }
 }
@@ -403,15 +402,13 @@ aside {
 @media all and (max-width: 1250px) {
   aside {
     max-width: 100%;
-    width: 100%;
     margin: 0 auto 20px auto;
   }
 }
 
 @media all and (max-width: 767px) {
   aside {
-    max-width: none;
-    width: auto;
+    max-width: 100%;
     border-radius: 0px;
   }
 }
@@ -445,6 +442,7 @@ aside {
 }
 
 .a-thumbnail {
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -463,8 +461,8 @@ aside {
   .a-thumbnail {
     align-content: center;
     margin: 0 20px 0 20px;
-    width: 100%;
     height: auto;
+    max-width: 90%;
   }
 }
 
@@ -511,8 +509,8 @@ aside {
 @media all and (max-width: 767px) {
   .a-legend {
     padding: 10px 0 0 20px;
-    min-width: 200px;
-    font-size: 16px;
+    width: 100%;
+    font-size: 14px;
   }
 }
 
@@ -527,7 +525,7 @@ aside {
 
 @media all and (max-width: 767px) {
   .a-rating {
-    padding-top: 20px;
+    padding-top: 35px;
   }
 }
 
